@@ -1,0 +1,482 @@
+/* ============================================================
+   PITCH BLACK APP STYLES
+   ============================================================ */
+
+/* Navbar */
+.navbar {
+  background-color: var(--bg-navbar);
+  border-bottom: 1px solid var(--border-color);
+  padding: 16px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-decoration: none;
+  letter-spacing: -0.3px;
+  cursor: pointer;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.theme-toggle-btn {
+  background: var(--input-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.15s ease;
+}
+
+.theme-toggle-btn:hover {
+  background-color: var(--border-color);
+}
+
+.nav-user-badge {
+  font-size: 12.5px;
+  color: var(--text-main);
+  background-color: var(--primary-subtle);
+  border: 1px solid var(--border-color);
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-weight: 600;
+}
+
+.btn-nav-logout {
+  background: transparent;
+  color: var(--danger-btn);
+  border: 1px solid var(--border-color);
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-nav-logout:hover {
+  background-color: rgba(255, 69, 58, 0.12);
+  border-color: var(--danger-btn);
+}
+
+/* Main Layout */
+.main-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  max-width: 1080px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ============================================================
+   AUTH CARDS (LOGIN & REGISTER)
+   ============================================================ */
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 32px 30px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  color: var(--text-main);
+  text-align: left;
+}
+
+.auth-header {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.auth-header h2 {
+  font-size: 1.55rem;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+  margin-bottom: 6px;
+  color: var(--text-main);
+}
+
+.auth-header p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 6px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px 14px;
+  background-color: var(--input-bg);
+  color: var(--text-main);
+  border: 1px solid var(--input-border);
+  border-radius: 9px;
+  font-size: 13.5px;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.input-wrapper .form-input {
+  padding-right: 58px;
+}
+
+.form-input:focus {
+  border-color: var(--input-focus);
+  box-shadow: 0 0 0 3px var(--primary-glow);
+}
+
+.form-input::placeholder {
+  color: #555555;
+}
+
+.toggle-password-btn {
+  position: absolute;
+  right: 8px;
+  background: var(--secondary-btn);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-main);
+  border-radius: 6px;
+  transition: opacity 0.15s ease;
+}
+
+.toggle-password-btn:hover {
+  opacity: 0.8;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 11px 16px;
+  background-color: var(--primary-btn);
+  color: var(--primary-btn-text);
+  border: none;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: opacity 0.15s ease;
+}
+
+.btn-submit:hover {
+  opacity: 0.9;
+}
+
+.btn-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.auth-switch-footer {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.btn-link-switch {
+  background: transparent;
+  border: none;
+  color: var(--text-main);
+  text-decoration: underline;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 0 4px;
+}
+
+.btn-link-switch:hover {
+  opacity: 0.8;
+}
+
+/* Alerts */
+.alert-error {
+  background-color: rgba(255, 69, 58, 0.1);
+  border: 1px solid rgba(255, 69, 58, 0.3);
+  color: var(--error-color);
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 12.5px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.alert-success {
+  background-color: rgba(48, 209, 88, 0.1);
+  border: 1px solid rgba(48, 209, 88, 0.3);
+  color: var(--success-color);
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 12.5px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+/* ============================================================
+   LOGGED-IN DASHBOARD (CREDENTIALS & STATUS)
+   ============================================================ */
+.dashboard-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+/* Hero Profile Banner */
+.dashboard-hero-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 24px 28px;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 18px;
+  text-align: left;
+}
+
+.dashboard-hero-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.user-avatar-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  background-color: var(--primary-btn);
+  color: var(--primary-btn-text);
+  font-size: 22px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hero-user-details h2 {
+  font-size: 1.45rem;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  margin-bottom: 3px;
+}
+
+.hero-user-sub {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.btn-hero-logout {
+  background-color: transparent;
+  color: var(--danger-btn);
+  border: 1px solid var(--border-color);
+  padding: 9px 18px;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-hero-logout:hover {
+  background-color: rgba(255, 69, 58, 0.12);
+  border-color: var(--danger-btn);
+}
+
+/* Cards Row: Credentials & Account Status */
+.dashboard-cards-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.credentials-card,
+.status-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: var(--card-shadow);
+  text-align: left;
+}
+
+.card-header-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.card-header-title h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+}
+
+.data-rows-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.data-row-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed var(--border-subtle);
+  font-size: 13.5px;
+}
+
+.data-row-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.data-row-label {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 12.5px;
+}
+
+.data-row-value {
+  font-weight: 600;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.password-reveal-btn {
+  background: var(--input-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.password-reveal-btn:hover {
+  color: var(--text-main);
+}
+
+/* Status Badges */
+.badge-status-pill {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.badge-active {
+  background-color: rgba(48, 209, 88, 0.12);
+  color: var(--success-color);
+  border: 1px solid rgba(48, 209, 88, 0.3);
+}
+
+.badge-verified {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid var(--border-color);
+}
+
+.status-indicator-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--success-color);
+}
+
+/* Footer */
+.app-footer {
+  background-color: var(--bg-navbar);
+  border-top: 1px solid var(--border-color);
+  padding: 24px 20px;
+  margin-top: auto;
+}
+
+.footer-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-text {
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  text-align: left;
+}
+
+.footer-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.775rem;
+  color: var(--success-color);
+  background-color: rgba(48, 209, 88, 0.1);
+  padding: 4px 10px;
+  border-radius: 9999px;
+  border: 1px solid rgba(48, 209, 88, 0.25);
+}

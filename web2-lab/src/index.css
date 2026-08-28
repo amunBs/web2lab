@@ -1,0 +1,105 @@
+:root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* ============================================================
+     DARK THEME (DEFAULT: OLED PITCH BLACK)
+     ============================================================ */
+  --bg-app: #000000;
+  --bg-card: #0d0d0d;
+  --bg-card-elevated: #141414;
+  --bg-navbar: #050505;
+  --text-main: #ffffff;
+  --text-muted: #8e8e93;
+  --border-color: #222222;
+  --border-subtle: #191919;
+  --input-bg: #080808;
+  --input-border: #262626;
+  --input-focus: #ffffff;
+  
+  --primary-btn: #ffffff;
+  --primary-btn-hover: #e5e5ea;
+  --primary-btn-text: #000000;
+  --primary-subtle: rgba(255, 255, 255, 0.08);
+  --primary-glow: rgba(255, 255, 255, 0.15);
+
+  --danger-btn: #ff453a;
+  --danger-btn-hover: #d70015;
+  --secondary-btn: #1c1c1e;
+  --secondary-btn-hover: #2c2c2e;
+  
+  --success-color: #30d158;
+  --error-color: #ff453a;
+  --warning-color: #ffd60a;
+
+  --card-shadow: 0 12px 40px rgba(0, 0, 0, 0.95);
+  --nav-shadow: 0 2px 16px rgba(0, 0, 0, 0.95);
+
+  color-scheme: dark;
+  color: var(--text-main);
+  background-color: var(--bg-app);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+[data-theme="light"] {
+  /* ============================================================
+     WHITE / LIGHT THEME
+     ============================================================ */
+  --bg-app: #ffffff;
+  --bg-card: #f9f9fb;
+  --bg-card-elevated: #ffffff;
+  --bg-navbar: #ffffff;
+  --text-main: #111827;
+  --text-muted: #6b7280;
+  --border-color: #e5e7eb;
+  --border-subtle: #f3f4f6;
+  --input-bg: #ffffff;
+  --input-border: #d1d5db;
+  --input-focus: #111827;
+  
+  --primary-btn: #111827;
+  --primary-btn-hover: #374151;
+  --primary-btn-text: #ffffff;
+  --primary-subtle: rgba(0, 0, 0, 0.05);
+  --primary-glow: rgba(0, 0, 0, 0.1);
+
+  --danger-btn: #ef4444;
+  --danger-btn-hover: #dc2626;
+  --secondary-btn: #f3f4f6;
+  --secondary-btn-hover: #e5e7eb;
+  
+  --success-color: #16a34a;
+  --error-color: #ef4444;
+  --warning-color: #ca8a04;
+
+  --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.06), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+  --nav-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-app);
+  color: var(--text-main);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
